@@ -43,7 +43,7 @@ Space: O(1)
 - Method: `GET`
 - URL: `/`
 - Query Parameters:
-  - `list` (required): A JSON-encoded array of numbers on which the Bit Manipulation operation will be performed.
+  - `list` (required): A JSON-encoded array of numbers on which each approaches function will be peformed
 
 ## Response
 
