@@ -40,7 +40,7 @@ This route performs all versions of our approaches that take a list of numbers p
 ## Request
 
 - Method: `GET`
-- URL: `/`
+- URL: `/firstnumber`
 - Query Parameters:
   - `list` (required): A JSON-encoded array of numbers on which each approaches function will be peformed
 
