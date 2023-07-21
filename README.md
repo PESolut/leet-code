@@ -70,7 +70,7 @@ Content:
 ## Request
 
 ```url
-GET /?list=[1,2,1,2,3]
+GET /firstnumber?list=[1,2,1,2,3]
 ```
 
 ## Response
@@ -114,6 +114,6 @@ This function effectively identifies the single number that appears only once in
 
 ### Returns
 
-1. r (Number): The result of the single number within the array of numbers
+1. n[i] (Number): The result of the single number within the array of numbers
 
 
