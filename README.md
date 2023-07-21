@@ -3,12 +3,6 @@
 Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
-## GET Route:
-
-This route performs all versions of our approaches that take a list of numbers provided as a query parameter and returns the result.
-
-there are four approaches to this problem:
-
 Approaches:
 
 1. Brute Force
@@ -37,6 +31,11 @@ Thus, using this we get 1 ^ 1 == 0 because the same numbers have same bits.
 So, we will always get the single element because all the same ones will evaluate to 0 and 0^single_number = single_number.
 Time: O(n)
 Space: O(1)
+
+
+## GET Route:
+
+This route performs all versions of our approaches that take a list of numbers provided as a query parameter and returns the result.
 
 ## Request
 
