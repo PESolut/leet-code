@@ -1,5 +1,6 @@
 // DEPENDACIES
 const express = require("express");
+const firstNumberController = require("./controllers/firstNumber.js")
 
 // CONFIGURATION
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 app.use(express.json())
 
 // CONTROLLERS
+app.use("/firstnumber", firstNumberController)
 
 // ROUTES
 app.get("/", (req, res) => {
