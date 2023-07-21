@@ -93,3 +93,27 @@ This function performs the Bit Manipulation operation on an array of numbers usi
 
 1. r (Number): The bitwise XOR result of all the numbers in the provided array.
 
+##  SortingSingleNumber Function
+
+The function SortingSingleNumber takes an array of numbers (n) as input and returns the single number that appears only once in the array. All other numbers in the array appear twice except for this single number.
+
+Sort the input array n in ascending order.
+Loop through the sorted array using an index i, starting from 0.
+For each element in the loop:
+1.  Get the current element's value cN.
+2. Get the next element's value nN (if it exists, otherwise nN will be undefined).
+3. Compare cN with nN.
+4. If cN is equal to nN, it means the current element has a pair, so skip the next element by incrementing i by 1. This is done because pairs are adjacent after sorting.
+5. If cN is not equal to nN, it means cN is the lone element without a pair, so return cN as the result.
+If no lone element is found in the loop, the function will implicitly return undefined.
+This function effectively identifies the single number that appears only once in the sorted input array and returns it.
+
+### Parameters
+
+1. n (Array): An array of numbers
+
+### Returns
+
+1. r (Number): The result of the single number within the array of numbers
+
+
