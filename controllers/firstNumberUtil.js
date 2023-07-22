@@ -25,4 +25,41 @@ var SortingSingleNumber = function(n) {
     }
 };
 
-module.exports = BitManipulationSingleNumber
+function hasKeyWithValueOne(obj) {
+    let value = 1
+    for (const key in obj) {
+        if (obj.hasOwnProperty(key) && obj[key] === value) {
+            return Number(key)
+   }
+ }
+ return false;
+}
+
+var hashingSingleNumber = function(nums) {
+   // loop through nums array, create frequency object
+
+   // key = nums[i]
+   // value = times number appears in nums
+
+   let freq = {}
+   for(let i = 0; i < nums.length;i++){
+
+       //check if the object exists, if not create key nums[i] with value of 1
+
+       if(freq[nums[i]]){
+           freq[nums[i]] = freq[nums[i]] + 1
+
+       } else {
+           freq[nums[i]] = 1
+       }
+   }
+   // find / check for presence of key with value of 1
+   const singleNumber = hasKeyWithValueOne(freq)
+   return singleNumber
+};
+
+module.exports = {
+    hashingSingleNumber,
+    BitManipulationSingleNumber,
+    SortingSingleNumber,
+};

@@ -1,9 +1,9 @@
 const express = require('express')
 const controller = express.Router()
-// const { BitManipulationSingleNumber, SortingSingleNumber } = require('./firstNumberUtil.js');
-const BitManipulationSingleNumber = require('./firstNumberUtil.js')
-const SortingSingleNumber = require('./firstNumberUtil.js')
-
+const { BitManipulationSingleNumber, SortingSingleNumber, hashingSingleNumber } = require('./firstNumberUtil.js');
+// const BitManipulationSingleNumber = require('./firstNumberUtil.js')
+// const SortingSingleNumber = require('./firstNumberUtil.js')
+// const hashingSingleNumber = require('./firstNumberUtil.js')
 
 
 controller.get('/', (req, res) => {
@@ -24,11 +24,13 @@ controller.get('/', (req, res) => {
             // peform function on arr
             const bmOutput = BitManipulationSingleNumber(listOfNumbersArr)
             const sOutput = SortingSingleNumber(listOfNumbersArr)
+            const hOutput =hashingSingleNumber(listOfNumbersArr)
     
             // output
             res.json({
                 'bit manipulation output': bmOutput,
-                'sorting output': sOutput
+                'sorting output': sOutput,
+                'hashing output': hOutput
             })
         } else {
             throw {
