@@ -120,6 +120,14 @@ This function effectively identifies the single number that appears only once in
 
 the HashingSingleNumber function uses a hash map (represented by the 'freq' object) to calculate the frequency of each number in the input array. It then calls the HasKeyWithValueOne function to find then umber with a frequency of 1, indicating the single number in the array that only appears once.
 
+### Parameters
+
+1. `nums` (Array): An array of numbers on which the frequency calculation will be peformed
+
+### Returns
+
+1. `singleNumber` (Number or Boolean): if a number with a frequency of `1` is found in the `freq` object, the function returns that number (converted to a number using `Number()`, Otherwsie, it returns `false` )
+
 1. ### HasKeyWithValueOne(obj)
 
 - Takes an object 'obj' as input and checks if it contains a key with a value of '1
