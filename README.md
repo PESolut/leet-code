@@ -116,4 +116,36 @@ This function effectively identifies the single number that appears only once in
 
 1. n[i] (Number): The result of the single number within the array of numbers
 
+## HashingSingleNumber Function
+
+the HashingSingleNumber function uses a hash map (represented by the 'freq' object) to calculate the frequency of each number in the input array. It then calls the HasKeyWithValueOne function to find then umber with a frequency of 1, indicating the single number in the array that only appears once.
+
+1. ### HasKeyWithValueOne(obj)
+
+- Takes an object 'obj' as input and checks if it contains a key with a value of '1
+- It starts by initializing a variable value with the value 1.
+- It then iterates through the keys of the obj using a for...in loop.
+- During each iteration, it checks if the key exists in the object and if its value is equal to 1.
+- If it finds a key with a value of 1, it returns the key (converted to a number using Number()).
+- If no such key is found after the loop, the function returns false.
+
+### Parameters
+
+1. obj (Object): An object containing the frequency of the given set of numbers
+
+```
+{
+  2: 1,
+  3: 2
+  3: 1
+}
+```
+
+
+
+### Returns
+
+1. 'keyWithvalueOne' (Number or Boolean): if a key with a value of 1 is found in the object, the function returns the key ( converted to a number using Number()). Otherwise,it returns false
+
+
 

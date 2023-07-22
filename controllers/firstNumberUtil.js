@@ -35,7 +35,7 @@ function hasKeyWithValueOne(obj) {
  return false;
 }
 
-var hashingSingleNumber = function(nums) {
+var HashingSingleNumber = function(nums) {
    // loop through nums array, create frequency object
 
    // key = nums[i]
@@ -59,7 +59,7 @@ var hashingSingleNumber = function(nums) {
 };
 
 module.exports = {
-    hashingSingleNumber,
+    HashingSingleNumber,
     BitManipulationSingleNumber,
     SortingSingleNumber,
 };
