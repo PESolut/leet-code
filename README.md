@@ -128,7 +128,7 @@ the HashingSingleNumber function uses a hash map (represented by the 'freq' obje
 
 1. `singleNumber` (Number or Boolean): if a number with a frequency of `1` is found in the `freq` object, the function returns that number (converted to a number using `Number()`, Otherwsie, it returns `false` )
 
-1. ### HasKeyWithValueOne(obj)
+### HasKeyWithValueOne(obj)
 
 - Takes an object 'obj' as input and checks if it contains a key with a value of '1
 - It starts by initializing a variable value with the value 1.
